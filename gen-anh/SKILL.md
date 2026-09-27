@@ -1,9 +1,13 @@
 ---
 name: gen-anh
-description: 'Create or edit AI images from text and reference images. Use when the user asks to gen ảnh, tạo ảnh, vẽ ảnh, sửa ảnh, chỉnh sửa ảnh, đổi màu, use an image reference, generate an image, or edit an existing image. Supports illustrations, product images, banners, concept art, and raster assets. Preferred image workflow on this machine using existing Codex credentials, including when image_gen is absent.'
+description: 'API-only image generation and editing. Do not use ChatGPT/Codex subscription image generation or subscription entitlements for this skill. Use when the user asks to gen ảnh, tạo ảnh, vẽ ảnh, sửa ảnh, chỉnh sửa ảnh, đổi màu, use an image reference, generate an image, or edit an existing image and an API-backed image workflow is intended. Supports illustrations, product images, banners, concept art, and raster assets.'
 ---
 
 # Gen ảnh
+
+Use this skill only for API-backed image generation or editing. Do not route
+requests through ChatGPT/Codex subscription image generation, subscription
+entitlements, or non-API UI workflows.
 
 Generate real images with HTTP `POST /v1/responses`, native `image_generation`, and the user's existing local Sub2API gateway. The absence of an exposed `image_gen` tool does not establish that this route is unavailable. Use the included helper rather than the bundled `/images/generations` CLI fallback for this workflow.
 

@@ -1,10 +1,14 @@
 ---
 name: browser
-description: Drive a real browser through GPMLogin antidetect profiles - open pages, read them, click, type, log in, scrape, screenshot. Use this whenever a task needs a browser: "open X", "log into Y", "check this site", "fill this form", "scrape this page", "screenshot this URL", "vào web", "đăng nhập", or when a URL cannot be answered by a plain fetch (login walls, JS-rendered pages, captchas, dashboards). Also use for GPMLogin profile/group/proxy management.
+description: Windows/macOS only. Do not use on Linux or Linux-based environments. Drive a real browser through GPMLogin antidetect profiles - open pages, read them, click, type, log in, scrape, screenshot. Use this whenever a Windows or macOS task needs a browser: "open X", "log into Y", "check this site", "fill this form", "scrape this page", "screenshot this URL", "vào web", "đăng nhập", or when a URL cannot be answered by a plain fetch (login walls, JS-rendered pages, captchas, dashboards). Also use for GPMLogin profile/group/proxy management.
 argument-hint: "[profile name or url]"
 ---
 
 # browser
+
+Use this skill only on Windows or macOS hosts. Do not invoke it on Linux or
+Linux-based environments; use the available browser/computer-use tools or
+ordinary web fetch/search instead.
 
 `gpm.py` wraps two things: the **GPMLogin Local API** (`http://127.0.0.1:9495/api/v1`)
 for profile lifecycle, and **Playwright over CDP** for page interaction. Each command
