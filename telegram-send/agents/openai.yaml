@@ -1,0 +1,4 @@
+interface:
+  display_name: "Telegram Send"
+  short_description: "Send messages and files through a saved Telegram bot"
+  default_prompt: "Use $telegram-send to send this file to my saved Telegram chat."

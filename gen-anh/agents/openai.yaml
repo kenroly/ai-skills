@@ -1,0 +1,6 @@
+interface:
+  display_name: "Gen ảnh"
+  short_description: "Tạo và chỉnh sửa ảnh AI từ mô tả, ảnh tham chiếu"
+  default_prompt: "Use $gen-anh to create or edit an image using my description and any reference images, then show the saved result."
+policy:
+  allow_implicit_invocation: true
